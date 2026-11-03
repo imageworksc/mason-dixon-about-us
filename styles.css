@@ -269,6 +269,8 @@ svg{flex-shrink:0}
 .cta-split__phone{font-family:var(--font-display);font-weight:700;font-size:clamp(26px,2vw + 12px,40px);letter-spacing:-.015em;line-height:1.1;color:#fff;text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.18em;text-decoration-color:rgba(255,255,255,.35);transition:text-decoration-color .3s var(--ease)}
 .cta-split__phone:hover{text-decoration-color:#fff}
 .cta-split__body .btn-row{margin-top:auto;padding-top:var(--s3)}
+.cta-split__half--career .cta-split__body{justify-content:center}
+.cta-split__half--career .cta-split__body .btn-row{margin-top:0;padding-top:var(--s2)}
 .cta-split__paw{position:absolute;right:-2rem;bottom:-3rem;z-index:-1;width:260px;height:260px;color:#fff;opacity:.08;transform:rotate(-14deg)}
 .btn-light{background:#fff;border-color:#fff;color:var(--red)}
 .btn-light:hover,.btn-light:focus-visible{background:var(--navy-900);border-color:var(--navy-900);color:#fff}
