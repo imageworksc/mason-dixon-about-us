@@ -19,6 +19,40 @@
     });
   }
 
+  // Count-up numbers
+  var counters = document.querySelectorAll('[data-count]');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function format(n, el) {
+    return n.toLocaleString('en-US') + (el.getAttribute('data-suffix') || '');
+  }
+  function runCounter(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var duration = 1800;
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 4);
+      el.textContent = format(Math.round(target * eased), el);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+    // Safety net: always land on the final value (e.g. if the tab is backgrounded)
+    setTimeout(function () { el.textContent = format(target, el); }, duration + 400);
+  }
+  if (counters.length && !reduce && 'IntersectionObserver' in window) {
+    counters.forEach(function (el) { el.textContent = format(0, el); });
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          co.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { co.observe(el); });
+  }
+
   // Scroll reveal
   var targets = document.querySelectorAll('[data-reveal], [data-reveal-stagger]');
   document.querySelectorAll('[data-reveal-stagger]').forEach(function (group) {
