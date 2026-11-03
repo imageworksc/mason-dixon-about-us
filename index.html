@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -270,51 +270,58 @@
 <section class="giving on-dark">
   <svg class="giving__paw" aria-hidden="true"><use href="#i-paw-print"/></svg>
   <div class="container giving__inner">
-    <div class="giving__copy" data-reveal>
+    <div class="giving__head" data-reveal>
       <h2>Giving Back to the Community We Call Home</h2>
-      <p>Mason Dixon proudly serves families throughout Southern Pennsylvania and Northern Maryland, including Shrewsbury, Stewartstown, New Freedom, and surrounding communities.</p>
-      <p>We support local animal welfare organizations and rescue efforts, including the York County SPCA.</p>
-    </div>
-    <div class="giving__aside" data-reveal>
-      <div class="stat">
-        <span class="stat__value">Mason Dixon Miracle Fund</span>
-        <span class="stat__label">Through our Miracle Fund, we also help provide financial assistance for emergency veterinary care to pets and families in need.</span>
-      </div>
       <p class="giving__close">We're proud to be a locally owned hospital making a difference both inside and outside our emergency room.</p>
     </div>
+    <ul class="giving__list" data-reveal-stagger>
+      <li>
+        <svg aria-hidden="true"><use href="#i-pin"/></svg>
+        <p>Mason Dixon proudly serves families throughout Southern Pennsylvania and Northern Maryland, including Shrewsbury, Stewartstown, New Freedom, and surrounding communities.</p>
+      </li>
+      <li>
+        <svg aria-hidden="true"><use href="#i-heart"/></svg>
+        <p>We support local animal welfare organizations and rescue efforts, including the York County SPCA.</p>
+      </li>
+      <li>
+        <svg aria-hidden="true"><use href="#i-hands"/></svg>
+        <p>Through our <strong>Mason Dixon Miracle Fund</strong>, we also help provide financial assistance for emergency veterinary care to pets and families in need.</p>
+      </li>
+    </ul>
   </div>
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section class="cta-glass on-dark">
-  <div class="glow glow--red" aria-hidden="true"></div>
-  <div class="glow glow--blue" aria-hidden="true"></div>
-  <div class="paws" aria-hidden="true"></div>
-  <div class="container">
-    <div class="glass-card cta-card" data-reveal>
-      <h2 class="cta-card__title">Whether You Need Emergency Care or a New Career, We're&nbsp;Here.</h2>
-      <div class="cta-card__cols">
-        <div class="cta-card__col">
-          <span class="glass-card__icon"><svg aria-hidden="true"><use href="#i-pulse"/></svg></span>
-          <h3>Need Emergency Veterinary Care?</h3>
-          <p>We're open 24 hours a day, 7 days a week, including holidays. No appointment is necessary.</p>
-          <address>
-            <strong>Mason Dixon Animal Emergency Hospital</strong>
-            96 Sofia Drive, Suite 203<br>Shrewsbury, PA 17361
-          </address>
-          <a class="glass-card__phone" href="tel:+17174326030">Call (717) 432-6030</a>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="tel:+17174326030"><svg aria-hidden="true"><use href="#i-phone"/></svg> Get Emergency Care</a>
-            <a class="btn btn-default" href="https://www.google.com/maps/search/?api=1&amp;query=96+Sofia+Drive+Suite+203+Shrewsbury+PA+17361" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg> Directions</a>
-          </div>
+<section class="cta-split">
+  <div class="cta-split__head on-dark">
+    <div class="paws" aria-hidden="true"></div>
+    <div class="container">
+      <h2 data-reveal>Whether You Need Emergency Care or a New Career, We're&nbsp;Here.</h2>
+    </div>
+  </div>
+  <div class="cta-split__halves">
+    <div class="cta-split__half cta-split__half--care on-dark">
+      <div class="cta-split__body" data-reveal>
+        <h3>Need Emergency Veterinary Care?</h3>
+        <p>We're open 24 hours a day, 7 days a week, including holidays. No appointment is necessary.</p>
+        <address>
+          <strong>Mason Dixon Animal Emergency Hospital</strong>
+          96 Sofia Drive, Suite 203<br>Shrewsbury, PA 17361
+        </address>
+        <a class="cta-split__phone" href="tel:+17174326030">Call (717) 432-6030</a>
+        <div class="btn-row">
+          <a class="btn btn-light" href="tel:+17174326030"><svg aria-hidden="true"><use href="#i-phone"/></svg> Get Emergency Care</a>
+          <a class="btn btn-default" href="https://www.google.com/maps/search/?api=1&amp;query=96+Sofia+Drive+Suite+203+Shrewsbury+PA+17361" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg> Directions</a>
         </div>
-        <div class="cta-card__col">
-          <span class="glass-card__icon"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span>
-          <h3>Looking for a Career in Emergency Veterinary Medicine?</h3>
-          <p>Join an experienced, collaborative team where challenging work creates opportunities to learn, advance, and make a difference.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="https://www.masondixonveter.com/careers">Explore Careers at Mason Dixon <svg class="btn-trail" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
+      </div>
+      <svg class="cta-split__paw" aria-hidden="true"><use href="#i-paw-print"/></svg>
+    </div>
+    <div class="cta-split__half cta-split__half--career on-dark">
+      <div class="cta-split__body" data-reveal>
+        <h3>Looking for a Career in Emergency Veterinary Medicine?</h3>
+        <p>Join an experienced, collaborative team where challenging work creates opportunities to learn, advance, and make a difference.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://www.masondixonveter.com/careers">Explore Careers at Mason Dixon <svg class="btn-trail" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </div>
