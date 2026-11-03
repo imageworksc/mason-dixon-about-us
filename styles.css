@@ -271,10 +271,10 @@ svg{flex-shrink:0}
 .glass-card .btn-row{justify-content:center;margin-top:8px}
 
 /* ---------- Careers band ---------- */
-.careers-band{position:relative;overflow:hidden;isolation:isolate;padding:clamp(44px,4.5vw,72px) 0;background:var(--navy);color:var(--on-dark)}
-.careers-band__paw{position:absolute;right:-2rem;bottom:-3rem;z-index:-1;width:260px;height:260px;color:#fff;opacity:.08;transform:rotate(-14deg)}
+.careers-band{position:relative;overflow:hidden;isolation:isolate;padding:clamp(44px,4.5vw,72px) 0;background:#fff;color:var(--slate)}
+.careers-band__paw{position:absolute;right:-2rem;bottom:-3rem;z-index:-1;width:260px;height:260px;color:var(--navy);opacity:.05;transform:rotate(-14deg)}
 .careers-band__inner{display:grid;gap:var(--s5);align-items:center}
-.careers-band h2{color:#fff;font-size:clamp(22px,1.2vw + 14px,32px);line-height:1.15}
+.careers-band h2{color:var(--navy);font-size:clamp(22px,1.2vw + 14px,32px);line-height:1.15}
 .careers-band p{margin-top:var(--s3);max-width:620px;font-size:16.5px;line-height:1.65}
 @media (min-width:992px){.careers-band__inner{grid-template-columns:1fr auto;column-gap:var(--s8)}}
 
