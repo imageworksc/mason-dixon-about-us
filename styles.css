@@ -268,7 +268,17 @@ svg{flex-shrink:0}
 .glass-card__phone::after{content:"";position:absolute;left:0;right:0;bottom:-.12em;height:.08em;border-radius:1em;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
 .glass-card__phone:hover::after{transform:scaleX(1)}
 .glass-card .btn-row{margin-top:auto;padding-top:var(--s3)}
-@media (min-width:900px){.cta-cards{grid-template-columns:1fr 1fr}}
+.cta-card{max-width:1080px;margin:0 auto;padding:clamp(28px,4vw,56px);gap:0}
+.cta-card__title{max-width:760px;margin:0 auto clamp(28px,3vw,44px);text-align:center;color:#fff;font-size:clamp(26px,1.6vw + 16px,40px)}
+.cta-card__cols{display:grid;gap:var(--s6);width:100%}
+.cta-card__col{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s4)}
+.cta-card__col + .cta-card__col{padding-top:var(--s6);border-top:1px solid rgba(255,255,255,.16)}
+.cta-card__col .btn-row{margin-top:auto;padding-top:var(--s3)}
+@media (min-width:900px){
+  .cta-card__cols{grid-template-columns:1fr 1fr;gap:0}
+  .cta-card__col{padding-right:clamp(24px,3.5vw,48px)}
+  .cta-card__col + .cta-card__col{padding:0 0 0 clamp(24px,3.5vw,48px);border-top:0;border-left:1px solid rgba(255,255,255,.16)}
+}
 
 /* ---------- Footer ---------- */
 .site-footer{background:var(--navy-900);color:var(--on-dark-muted);font-size:15px}
