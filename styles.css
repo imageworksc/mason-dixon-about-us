@@ -169,7 +169,7 @@ svg{flex-shrink:0}
 
 /* ---------- X-ray band ---------- */
 .xray-band{position:relative;height:clamp(300px,28vw,440px);overflow:hidden;background:var(--navy-900)}
-.xray-band img{position:absolute;right:0;top:0;width:min(55%,1500px);height:100%;object-fit:cover;object-position:30% 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 18%);mask-image:linear-gradient(to right,transparent 0%,#000 18%)}
+.xray-band img{position:absolute;right:0;top:0;width:min(62%,1500px);height:100%;object-fit:cover;object-position:50% 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 18%,#000 38%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 18%,#000 38%)}
 .xray-caption{position:absolute;inset:0;z-index:1;display:flex;align-items:center;color:#fff}
 .xray-caption p{max-width:600px;font-family:var(--font-display);font-weight:600;font-size:clamp(18.4px,1.5vw,24px);letter-spacing:-.02em;line-height:1.35}
 @media (max-width:767px){
