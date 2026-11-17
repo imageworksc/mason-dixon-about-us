@@ -308,10 +308,10 @@ svg{flex-shrink:0}
 .work{background:var(--navy);color:var(--on-dark);border-color:transparent}
 .work .paws{opacity:.05;-webkit-mask-image:linear-gradient(90deg,transparent 55%,#000 90%);mask-image:linear-gradient(90deg,transparent 55%,#000 90%)}
 .work h2,.work h3,.work__label{color:#fff}
-.work h2 em{color:#ff4a5c}
-.work__sub{color:#ff4a5c}
+.work h2 em{color:#de2a3d}
+.work__sub{color:#de2a3d}
 .work__copy p:not(.work__sub){color:var(--on-dark)}
 .work .perks{border-top-color:rgba(255,255,255,.16)}
 .work .perk{border-bottom-color:rgba(255,255,255,.16)}
-.work .perk__icon{color:#ff4a5c}
+.work .perk__icon{color:#de2a3d}
 .work .perk p{color:var(--on-dark-muted)}
