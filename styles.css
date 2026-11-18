@@ -326,13 +326,13 @@ svg{flex-shrink:0}
 /* ---------- Facility abstract 3D fragment (from A101 plan) ---------- */
 .facility{min-height:clamp(420px,32vw,540px);display:flex;align-items:center;background:#f6f6f8}
 .facility > .container{width:100%}
-.facility__plan{position:absolute;top:0;bottom:0;right:max(0px,calc((100vw - var(--container)) / 2 - 120px));width:min(58%,880px);z-index:0;pointer-events:none;-webkit-mask-image:radial-gradient(ellipse 70% 75% at 62% 50%,#000 35%,transparent 78%);mask-image:radial-gradient(ellipse 70% 75% at 62% 50%,#000 35%,transparent 78%)}
-.fp3d{position:absolute;top:50%;left:50%;width:100%;height:auto;max-height:118%;transform:translate(-44%,-50%)}
+.facility__plan{position:absolute;top:0;bottom:0;right:max(-200px,calc((100vw - var(--container)) / 2 - 360px));width:min(82%,1400px);z-index:0;pointer-events:none;opacity:.42;-webkit-mask-image:radial-gradient(ellipse 65% 80% at 60% 50%,#000 25%,transparent 80%);mask-image:radial-gradient(ellipse 65% 80% at 60% 50%,#000 25%,transparent 80%)}
+.fp3d{position:absolute;top:50%;left:50%;width:100%;height:auto;transform:translate(-42%,-50%)}
 .fp3d path{vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
 .fp3d-w{stroke:#7f83a3;stroke-width:1.4;opacity:.6}
 .fp3d-r{stroke:#8c8fae;stroke-width:1.1;opacity:.55}
 .fp3d-f{stroke:#a3a6bf;stroke-width:1;opacity:.5}
 .fp3d-c{stroke:#aeb6ff;stroke-width:10;stroke-linecap:round;opacity:.35}
-@media (max-width:1023px){.facility{min-height:0;display:block}.facility__plan{width:100%;opacity:.35}}
+@media (max-width:1023px){.facility{min-height:0;display:block}.facility__plan{width:160%;right:-60%;opacity:.22}}
 .facility__copy p{max-width:560px}
 .facility__head h2{max-width:560px}
