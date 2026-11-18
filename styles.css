@@ -327,7 +327,7 @@ svg{flex-shrink:0}
 .facility{min-height:clamp(420px,32vw,540px);display:flex;align-items:center;background:#f6f6f8}
 .facility > .container{width:100%}
 .facility__plan{position:absolute;top:0;bottom:0;right:max(0px,calc((100vw - var(--container)) / 2 - 80px));width:min(60%,900px);z-index:0;pointer-events:none;opacity:.72;-webkit-mask-image:radial-gradient(ellipse 65% 80% at 60% 50%,#000 25%,transparent 80%);mask-image:radial-gradient(ellipse 65% 80% at 60% 50%,#000 25%,transparent 80%)}
-.fp3d{position:absolute;top:50%;left:58%;width:auto;height:118%;transform:translate(-50%,-50%)}
+.fp3d{position:absolute;top:50%;left:70%;width:auto;height:118%;transform:translate(-50%,-50%)}
 .fp3d path{vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
 .fp3d-w{stroke:#7f83a3;stroke-width:1.4;opacity:.6}
 .fp3d-r{stroke:#8c8fae;stroke-width:1.1;opacity:.55}
