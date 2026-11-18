@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <link rel="stylesheet" href="header.css?v=2">
-<link rel="stylesheet" href="styles.css?v=47">
+<link rel="stylesheet" href="styles.css?v=49">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -500,7 +500,6 @@
 
 <!-- ============ FACILITY ============ -->
 <section class="facility">
-  <div class="facility__plan" aria-hidden="true"><img src="assets/floor-plan.png" alt=""></div>
   <div class="container facility__inner">
     <div class="facility__head" data-reveal>
       <h2>A Modern Hospital Built for Emergency Medicine</h2>
@@ -510,6 +509,54 @@
       <p>From our dedicated treatment areas to our medical equipment, the hospital is designed to help our team respond efficiently to a wide range of emergency conditions.</p>
       <a class="btn btn-default" href="https://www.masondixonveter.com/explore-our-facility">Explore Our Hospital &amp; Facility <svg class="btn-trail" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
+  </div>
+  <div class="facility__plan" aria-hidden="true">
+    <svg class="fp" viewBox="0 0 640 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="fp-fade" cx="50%" cy="50%" r="60%"><stop offset="40%" stop-color="#fff"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></radialGradient><mask id="fp-grid-mask"><rect width="640" height="456" fill="url(#fp-fade)"/></mask>
+        <pattern id="fp-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="currentColor" stroke-width=".5" opacity=".35"/></pattern>
+      </defs>
+      <rect x="0" y="0" width="640" height="456" fill="url(#fp-grid)" class="fp-grid" mask="url(#fp-grid-mask)"/>
+      <!-- building shell with chamfered corner -->
+      <path class="fp-wall" d="M24 40H560L616 96V412H24Z"/>
+      <!-- treatment hub -->
+      <rect class="fp-room fp-room--accent" x="24" y="40" width="252" height="196" rx="4"/>
+      <path class="fp-line" d="M150 112l26 15v30l-26 15-26-15v-30z"/>
+      <circle class="fp-dot" cx="150" cy="142" r="4"/>
+      <rect class="fp-line" x="44" y="60" width="44" height="22" rx="3"/>
+      <rect class="fp-line" x="44" y="92" width="44" height="22" rx="3"/>
+      <rect class="fp-line" x="44" y="124" width="44" height="22" rx="3"/>
+      <text class="fp-label" x="150" y="210" text-anchor="middle">Treatment</text>
+      <!-- exam rooms row -->
+      <path class="fp-wall-in" d="M276 40V150M346 40V150M416 40V150M486 40V150M276 150H560"/>
+      <path class="fp-door" d="M296 150a18 18 0 0 1 18-18M366 150a18 18 0 0 1 18-18M436 150a18 18 0 0 1 18-18M506 150a18 18 0 0 1 18-18"/>
+      <text class="fp-label fp-label--sm" x="311" y="96" text-anchor="middle">Exam</text>
+      <text class="fp-label fp-label--sm" x="381" y="96" text-anchor="middle">Exam</text>
+      <text class="fp-label fp-label--sm" x="451" y="96" text-anchor="middle">Exam</text>
+      <text class="fp-label fp-label--sm" x="531" y="96" text-anchor="middle">Exam</text>
+      <!-- x-ray octagon -->
+      <path class="fp-room" d="M64 262h56l24 24v56l-24 24H64l-24-24v-56z"/>
+      <text class="fp-label" x="92" y="319" text-anchor="middle">X-Ray</text>
+      <!-- surgery suites -->
+      <rect class="fp-room" x="176" y="262" width="132" height="124" rx="4"/>
+      <rect class="fp-line" x="222" y="300" width="40" height="56" rx="10"/>
+      <circle class="fp-dot fp-dot--red" cx="242" cy="290" r="5"/>
+      <text class="fp-label" x="242" y="378" text-anchor="middle">Surgery</text>
+      <rect class="fp-room" x="324" y="262" width="104" height="124" rx="4"/>
+      <path class="fp-line" d="M344 286h64M344 306h64M344 326h40"/>
+      <text class="fp-label" x="376" y="378" text-anchor="middle">Lab</text>
+      <!-- reception / waiting -->
+      <rect class="fp-room fp-room--soft" x="444" y="182" width="172" height="230" rx="4"/>
+      <path class="fp-line" d="M472 226h84a16 16 0 0 1 16 16v14"/>
+      <circle class="fp-line" cx="488" cy="318" r="10"/><circle class="fp-line" cx="524" cy="318" r="10"/><circle class="fp-line" cx="560" cy="318" r="10"/>
+      <circle class="fp-line" cx="488" cy="354" r="10"/><circle class="fp-line" cx="524" cy="354" r="10"/><circle class="fp-line" cx="560" cy="354" r="10"/>
+      <text class="fp-label" x="530" y="210" text-anchor="middle">Reception</text>
+      <!-- corridor -->
+      <path class="fp-corridor" d="M24 248H436M436 160V400"/>
+      <!-- dimension line -->
+      <path class="fp-dim" d="M24 432H616M24 426v12M616 426v12"/>
+      <text class="fp-label fp-label--dim" x="320" y="452" text-anchor="middle">6,200 SQ FT</text>
+    </svg>
   </div>
 </section>
 
