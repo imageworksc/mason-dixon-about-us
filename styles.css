@@ -176,7 +176,7 @@ svg{flex-shrink:0}
 
 /* ---------- Photo band ("We communicate clearly…") ---------- */
 .xray-band{position:relative;height:clamp(300px,28vw,440px);overflow:hidden;background:var(--navy-900)}
-.xray-band img{position:absolute;right:0;top:0;width:min(54%,1400px);height:100%;object-fit:cover;object-position:62% 45%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.05) 6%,rgba(0,0,0,.2) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.85) 23%,#000 27%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.05) 6%,rgba(0,0,0,.2) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.85) 23%,#000 27%)}
+.xray-band img{position:absolute;right:0;top:0;width:min(44%,1200px);height:100%;object-fit:cover;object-position:75% 45%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.05) 6%,rgba(0,0,0,.2) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.85) 23%,#000 27%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.05) 6%,rgba(0,0,0,.2) 12%,rgba(0,0,0,.5) 18%,rgba(0,0,0,.85) 23%,#000 27%)}
 .xray-caption{position:absolute;inset:0;z-index:1;display:flex;align-items:center;color:#fff}
 .xray-caption p{max-width:600px;font-family:var(--font-display);font-weight:600;font-size:clamp(18.4px,1.5vw,24px);letter-spacing:-.02em;line-height:1.35}
 @media (min-width:2000px){.xray-band{height:clamp(440px,14vw,620px)}}
