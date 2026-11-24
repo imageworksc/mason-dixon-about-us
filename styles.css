@@ -341,15 +341,17 @@ svg{flex-shrink:0}
 
 /* ---------- Facility plan: interactive zones ---------- */
 .facility > .container{pointer-events:none}
-.facility__head,.facility__copy{pointer-events:auto}
-.fpz polygon{fill:transparent;stroke:transparent;stroke-width:1.5;vector-effect:non-scaling-stroke;transition:fill .35s var(--ease),stroke .35s var(--ease)}
-.fpz .fpz-top{pointer-events:all;cursor:default}
-.fpz .fp3d-label{transition:fill .3s var(--ease),opacity .3s var(--ease)}
-.fp3d-sub{font-family:var(--font-display);font-weight:600;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;fill:#5c5f86;opacity:0;transition:opacity .3s var(--ease)}
-.fpz:hover .fpz-top{fill:rgba(174,182,255,.28);stroke:var(--navy)}
-.fpz:hover .fpz-floor{fill:rgba(174,182,255,.18);stroke:rgba(36,38,103,.45)}
-.fpz:hover .fp3d-label{fill:var(--red)}
-.fpz:hover .fp3d-sub{opacity:1}
-.facility__plan:has(.fpz:hover){opacity:1}
-.facility__plan{transition:opacity .4s var(--ease)}
-@media (max-width:1023px){.fpz .fpz-top{pointer-events:none}}
+.facility__head,.facility__copy{pointer-events:auto;max-width:560px;justify-self:start}
+.fpz polygon{fill:transparent;stroke:transparent;stroke-width:1.2;vector-effect:non-scaling-stroke;transition:fill .7s var(--ease),stroke .7s var(--ease)}
+.fpz .fpz-hit{pointer-events:all;stroke:none}
+.fpz .fpz-floor,.fpz .fpz-top{pointer-events:none}
+.fpz text{pointer-events:none}
+.fpz .fp3d-label{transition:fill .6s var(--ease)}
+.fp3d-sub{font-family:var(--font-display);font-weight:600;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;fill:#6b6e94;opacity:0;transform:translateY(4px);transform-box:fill-box;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.fpz:hover .fpz-top{fill:rgba(174,182,255,.14);stroke:rgba(36,38,103,.22)}
+.fpz:hover .fpz-floor{fill:rgba(174,182,255,.10);stroke:rgba(36,38,103,.14)}
+.fpz:hover .fp3d-label{fill:var(--navy)}
+.fpz:hover .fp3d-sub{opacity:1;transform:none}
+.facility__plan{transition:opacity .6s var(--ease)}
+.facility__plan:has(.fpz:hover){opacity:.9}
+@media (max-width:1023px){.fpz .fpz-hit{pointer-events:none}}
