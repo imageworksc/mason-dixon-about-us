@@ -347,11 +347,18 @@ svg{flex-shrink:0}
 .fpz .fpz-floor,.fpz .fpz-top{pointer-events:none}
 .fpz text{pointer-events:none}
 .fpz .fp3d-label{transition:fill .6s var(--ease)}
-.fp3d-sub{font-family:var(--font-display);font-weight:600;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;fill:#6b6e94;opacity:0;transform:translateY(4px);transform-box:fill-box;transition:opacity .6s var(--ease),transform .6s var(--ease)}
 .fpz:hover .fpz-top{fill:rgba(174,182,255,.14);stroke:rgba(36,38,103,.22)}
 .fpz:hover .fpz-floor{fill:rgba(174,182,255,.10);stroke:rgba(36,38,103,.14)}
 .fpz:hover .fp3d-label{fill:var(--navy)}
-.fpz:hover .fp3d-sub{opacity:1;transform:none}
-.facility__plan{transition:opacity .6s var(--ease)}
+.fpz:hover .facility__plan{transition:opacity .6s var(--ease)}
 .facility__plan:has(.fpz:hover){opacity:.9}
 @media (max-width:1023px){.fpz .fpz-hit{pointer-events:none}}
+.fp-card{position:absolute;left:0;top:0;z-index:3;min-width:150px;max-width:240px;padding:12px 16px 13px;border-radius:12px;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--border);box-shadow:0 18px 40px -18px rgba(16,24,64,.28);pointer-events:none;opacity:0;transform:translate(var(--x,0),var(--y,0)) translateY(6px);transition:opacity .45s var(--ease),transform .45s var(--ease)}
+.fp-card.is-on{opacity:1;transform:translate(var(--x,0),var(--y,0))}
+.fp-card__name{display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--navy);white-space:nowrap}
+.fp-card__name::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0}
+.fp-card__list{margin-top:6px;display:grid;gap:3px}
+.fp-card__list:empty{display:none}
+.fp-card__list li{position:relative;padding-left:15px;font-size:13px;line-height:1.45;color:var(--slate)}
+.fp-card__list li::before{content:"";position:absolute;left:3px;top:.6em;width:5px;height:5px;border-radius:50%;background:#aeb6ff}
+@media (max-width:1023px){.fp-card{display:none}}

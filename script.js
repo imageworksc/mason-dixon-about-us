@@ -77,6 +77,42 @@
     updateScrolled();
   })();
 
+  // Facility plan hover card
+  (function () {
+    var section = document.querySelector('.facility');
+    var card = section && section.querySelector('.fp-card');
+    if (!card) return;
+    var nameEl = card.querySelector('.fp-card__name');
+    var listEl = card.querySelector('.fp-card__list');
+    var current = null;
+    function place(e) {
+      var r = section.getBoundingClientRect();
+      var x = e.clientX - r.left + 18, y = e.clientY - r.top + 18;
+      var maxX = r.width - card.offsetWidth - 12, maxY = r.height - card.offsetHeight - 12;
+      card.style.setProperty('--x', Math.min(x, maxX) + 'px');
+      card.style.setProperty('--y', Math.min(y, maxY) + 'px');
+    }
+    section.querySelectorAll('.fpz').forEach(function (z) {
+      z.addEventListener('mouseenter', function (e) {
+        if (current !== z) {
+          current = z;
+          nameEl.textContent = z.getAttribute('data-zone');
+          listEl.innerHTML = '';
+          (z.getAttribute('data-info') || '').split('|').filter(Boolean).forEach(function (t) {
+            var li = document.createElement('li'); li.textContent = t; listEl.appendChild(li);
+          });
+        }
+        place(e);
+        card.classList.add('is-on');
+      });
+      z.addEventListener('mousemove', place);
+      z.addEventListener('mouseleave', function () {
+        current = null;
+        card.classList.remove('is-on');
+      });
+    });
+  })();
+
   // Count-up numbers
   var counters = document.querySelectorAll('[data-count]');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
