@@ -1,6 +1,8 @@
-(function () {
-  var root = document.documentElement;
-  root.classList.add('js');
+// Loaded in <head> (not deferred) so the "js" class is set before first paint;
+// everything that touches the page body waits for DOMContentLoaded.
+document.documentElement.classList.add('js');
+
+document.addEventListener('DOMContentLoaded', function () {
 
   // Site header (mirrors masondixonveter.com behaviour)
   (function initSiteHeader() {
@@ -167,4 +169,4 @@
     });
   }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
   targets.forEach(function (el) { io.observe(el); });
-})();
+});

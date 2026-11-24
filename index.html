@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap">
-<link rel="stylesheet" href="header.css?v=2">
-<link rel="stylesheet" href="styles.css?v=71">
-<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="header.css?v=3">
+<script src="script.js?v=72"></script>
+<link rel="stylesheet" href="styles.css?v=72">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -48,7 +48,6 @@
 
 <!-- ============ HEADER (same as masondixonveter.com) ============ -->
 <header id="navbar" class="navbar navbar-default site-header" role="banner" data-site-header>
-
   <div class="navbar-util">
     <div class="container">
       <p class="navbar-text status">
@@ -73,14 +72,13 @@
       </ul>
     </div>
   </div>
-
   <div class="navbar-main">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="https://www.masondixonveter.com/" aria-label="Mason Dixon Animal Emergency Hospital — home">
           <img src="assets/logo_0.webp" alt="Mason Dixon Animal Emergency Hospital" width="327" height="94">
         </a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" aria-controls="navbar-collapse" aria-expanded="false">
           <svg class="navbar-toggle-open" aria-hidden="true"><use href="#icon-menu"/></svg>
           <svg class="navbar-toggle-close" aria-hidden="true"><use href="#icon-close"/></svg>
           <span class="sr-only">Toggle navigation</span>
@@ -90,221 +88,178 @@
           (717) 432-6030
         </a>
       </div>
-
       <div id="navbar-collapse" class="navbar-collapse collapse">
-        <button type="button" class="close navbar-close hidden-lg" data-toggle="collapse" data-target="#navbar-collapse">
+        <button type="button" class="close navbar-close hidden-lg">
           <svg aria-hidden="true"><use href="#icon-close"/></svg>
           <span class="sr-only">Close menu</span>
         </button>
-          <div class="region region-navigation-collapsible">
-    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" class="pull-right settings-tray-editable" id="block-mainnavigation" data-drupal-settingstray="editable">
-            
-  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
-  
-
-        
-
-  <ul class="menu menu--main nav navbar-nav">
-                                          <li class="dropdown mm mm-symptoms">
-          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Symptoms &amp; Conditions <span class="caret" aria-hidden="true"></span>
-          </button>
-          <div class="dropdown-menu mm-panel">
-                                          <ul class="list-unstyled mm-links">
-                  <li class="mm-lead">    <a href="https://www.masondixonveter.com/medical-emergencies-conditions" class="featured mm-link" title="Check the signs that shouldn&#039;t wait." data-drupal-link-system-path="node/81"><span class="mm-title">Is This an Emergency?</span><span class="mm-desc">Check the signs that shouldn&#039;t wait.</span></a>
-  </li>
-
-      </ul>
-                    <ul class="list-unstyled mm-links">
-                  <li>    <a href="https://www.masondixonveter.com/pet-emergency-symptoms" title="What to watch for, symptom by symptom." class="mm-link" data-drupal-link-system-path="node/258"><span class="mm-title">Pet Emergency Symptoms</span><span class="mm-desc">What to watch for, symptom by symptom.</span></a>
-  </li>
-
-      </ul>
-      
-                                  </div>
-        </li>
-                                                <li class="dropdown mm mm-care">
-          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Emergency Care <span class="caret" aria-hidden="true"></span>
-          </button>
-          <div class="dropdown-menu mm-panel mm-panel-wide">
-                          <div class="row">
-                                  <div class="col-lg-6">
-                                                          <div class="mm-group">
-        <span class="dropdown-header">Treatment</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/outpatient-care" title="Treated and discharged, no admission." class="mm-link" data-drupal-link-system-path="node/14"><span class="mm-title">Outpatient Treatment</span><span class="mm-desc">Treated and discharged, no admission.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/emergency-surgery" title="Procedures for life-threatening conditions." class="mm-link" data-drupal-link-system-path="node/20"><span class="mm-title">Emergency Surgery</span><span class="mm-desc">Procedures for life-threatening conditions.</span></a>
-  </li>
-
+        <div class="region region-navigation-collapsible">
+          <nav role="navigation" aria-labelledby="block-mainnavigation-menu" class="pull-right" id="block-mainnavigation">
+            <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+            <ul class="menu menu--main nav navbar-nav">
+              <li class="dropdown mm mm-symptoms">
+                <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                  Symptoms &amp; Conditions <span class="caret" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu mm-panel">
+                  <ul class="list-unstyled mm-links">
+                    <li class="mm-lead">    <a href="https://www.masondixonveter.com/medical-emergencies-conditions" class="featured mm-link" title="Check the signs that shouldn&#039;t wait."><span class="mm-title">Is This an Emergency?</span><span class="mm-desc">Check the signs that shouldn&#039;t wait.</span></a>
+                    </li>
                   </ul>
-      </div>
-                    <div class="mm-group">
-        <span class="dropdown-header">Intensive Care</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/oxygen-supplementation" title="Support for breathing difficulty." class="mm-link" data-drupal-link-system-path="node/21"><span class="mm-title">Oxygen Support</span><span class="mm-desc">Support for breathing difficulty.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/blood-transfusions" title="Type-matched transfusion services." class="mm-link" data-drupal-link-system-path="node/16"><span class="mm-title">Blood Transfusions</span><span class="mm-desc">Type-matched transfusion services.</span></a>
-  </li>
-
+                  <ul class="list-unstyled mm-links">
+                    <li>    <a href="https://www.masondixonveter.com/pet-emergency-symptoms" title="What to watch for, symptom by symptom." class="mm-link"><span class="mm-title">Pet Emergency Symptoms</span><span class="mm-desc">What to watch for, symptom by symptom.</span></a>
+                    </li>
                   </ul>
-      </div>
-      
-                                      </div>
-                                  <div class="col-lg-6">
-                                                          <div class="mm-group">
-        <span class="dropdown-header">Diagnostics</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/house-laboratory" title="Rapid bloodwork and diagnostic testing." class="mm-link" data-drupal-link-system-path="node/15"><span class="mm-title">In-House Laboratory</span><span class="mm-desc">Rapid bloodwork and diagnostic testing.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/radiology-ultrasound" title="Advanced imaging around the clock." class="mm-link" data-drupal-link-system-path="node/18"><span class="mm-title">X-Ray &amp; Ultrasound</span><span class="mm-desc">Advanced imaging around the clock.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/endoscopy" title="Minimally invasive retrieval and diagnostics." class="mm-link" data-drupal-link-system-path="node/132"><span class="mm-title">Endoscopy</span><span class="mm-desc">Minimally invasive retrieval and diagnostics.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-                    <div class="mm-group">
-        <span class="dropdown-header">Continuing care</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/specialist-referrals" title="Coordination with local specialists." class="mm-link" data-drupal-link-system-path="node/19"><span class="mm-title">Specialist Referrals</span><span class="mm-desc">Coordination with local specialists.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/euthanasia-aftercare-services" title="Compassionate support for hard decisions." class="mm-link" data-drupal-link-system-path="node/22"><span class="mm-title">Euthanasia &amp; Aftercare</span><span class="mm-desc">Compassionate support for hard decisions.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-      
-                                      </div>
-                              </div>
-                                  </div>
-        </li>
-                                                <li class="dropdown mm mm-visit">
-          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Your Visit <span class="caret" aria-hidden="true"></span>
-          </button>
-          <div class="dropdown-menu mm-panel">
-                                          <div class="mm-group">
-        <span class="dropdown-header">Before you arrive</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/what-expect-during-your-visit" title="From arrival to discharge, step by step." class="mm-link" data-drupal-link-system-path="node/32"><span class="mm-title">What to Expect</span><span class="mm-desc">From arrival to discharge, step by step.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/triage-levels-patient-illness" title="Medical triage, not arrival order." class="mm-link" data-drupal-link-system-path="node/131"><span class="mm-title">Triage Policies</span><span class="mm-desc">Medical triage, not arrival order.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-                    <div class="mm-group">
-        <span class="dropdown-header">Paying for care</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/financing-options" title="Payment plans and what we accept." class="mm-link" data-drupal-link-system-path="node/34"><span class="mm-title">Financing Options</span><span class="mm-desc">Payment plans and what we accept.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/mason-dixon-miracle-fund" title="Help for families facing hard costs." class="mm-link" data-drupal-link-system-path="node/250"><span class="mm-title">Miracle Fund</span><span class="mm-desc">Help for families facing hard costs.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-      
-                                  </div>
-        </li>
-                                                <li class="dropdown mm mm-hospital active">
-          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Our Hospital <span class="caret" aria-hidden="true"></span>
-          </button>
-          <div class="dropdown-menu mm-panel mm-panel-wide dropdown-menu-right">
-                          <div class="row">
-                                  <div class="col-lg-6">
-                                                          <div class="mm-group">
-        <span class="dropdown-header">The hospital</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/about-our-emergency-hospital" title="Who we are and how we work." class="mm-link" data-drupal-link-system-path="node/25"><span class="mm-title">About Mason Dixon</span><span class="mm-desc">Who we are and how we work.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/meet-our-team" title="The doctors and nurses on shift." class="mm-link" data-drupal-link-system-path="node/156"><span class="mm-title">Our Team</span><span class="mm-desc">The doctors and nurses on shift.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/explore-our-facility" title="A look inside the hospital." class="mm-link" data-drupal-link-system-path="node/71"><span class="mm-title">Our Facility</span><span class="mm-desc">A look inside the hospital.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/careers" title="Open roles on our team." class="mm-link" data-drupal-link-system-path="node/251"><span class="mm-title">Careers</span><span class="mm-desc">Open roles on our team.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-      
-                                      </div>
-                                  <div class="col-lg-6">
-                                                          <div class="mm-group">
-        <span class="dropdown-header">For pet owners</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/reviews" title="What other families have said." class="mm-link" data-drupal-link-system-path="node/141"><span class="mm-title">Testimonials</span><span class="mm-desc">What other families have said.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/blog" title="Guides and reading for pet owners." class="mm-link" data-drupal-link-system-path="blog"><span class="mm-title">Resources / Blog</span><span class="mm-desc">Guides and reading for pet owners.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/grief-counseling" title="Support after losing a pet." class="mm-link" data-drupal-link-system-path="node/27"><span class="mm-title">Grief Counseling</span><span class="mm-desc">Support after losing a pet.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/additional-pet-care-resources" title="Local services beyond emergency care." class="mm-link" data-drupal-link-system-path="node/93"><span class="mm-title">Additional Pet Resources</span><span class="mm-desc">Local services beyond emergency care.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-      
-                                      </div>
-                              </div>
-                                  </div>
-        </li>
-                                                <li class="dropdown mm mm-contact">
-          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contact Us <span class="caret" aria-hidden="true"></span>
-          </button>
-          <div class="dropdown-menu mm-panel dropdown-menu-right">
-                                          <div class="mm-group">
-        <span class="dropdown-header">Pet owners</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/contact-us" title="Phone, hours and how to reach us." class="mm-link" data-drupal-link-system-path="node/38"><span class="mm-title">Contact Information</span><span class="mm-desc">Phone, hours and how to reach us.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.google.com/maps/place/Mason+Dixon+Animal+Emergency+Hospital/@39.7568262,-76.6723362,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xefa263436c121061!8m2!3d39.7568262!4d-76.6701475" target="_blank" title="96 Sofia Drive, Shrewsbury PA." class="mm-link"><span class="mm-title">Directions</span><span class="mm-desc">96 Sofia Drive, Shrewsbury PA.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-                    <div class="mm-group">
-        <span class="dropdown-header">Referring veterinarians</span>
-        <ul class="list-unstyled">
-                                <li>    <a href="https://www.masondixonveter.com/vet-referrals" title="For veterinarians sending a patient." class="mm-link" data-drupal-link-system-path="node/76"><span class="mm-title">Emergency Referral</span><span class="mm-desc">For veterinarians sending a patient.</span></a>
-  </li>
-
-                                <li>    <a href="https://www.masondixonveter.com/ultrasound-referrals" title="Request a referral ultrasound." class="mm-link" data-drupal-link-system-path="node/112"><span class="mm-title">Ultrasound Referral</span><span class="mm-desc">Request a referral ultrasound.</span></a>
-  </li>
-
-                  </ul>
-      </div>
-      
-                                      <div class="mm-foot">
-                <p class="mm-foot-status"><span class="status-dot" aria-hidden="true"></span>Open 24 hours, every day</p>
-                <p class="mm-foot-addr">96 Sofia Drive, Suite 203 · Shrewsbury, PA 17361</p>
-                <a class="mm-foot-call" href="tel:+17174326030">(717) 432-6030</a>
-              </div>
+                </div>
+              </li>
+              <li class="dropdown mm mm-care">
+                <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                  Emergency Care <span class="caret" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu mm-panel mm-panel-wide">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mm-group">
+                        <span class="dropdown-header">Treatment</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/outpatient-care" title="Treated and discharged, no admission." class="mm-link"><span class="mm-title">Outpatient Treatment</span><span class="mm-desc">Treated and discharged, no admission.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/emergency-surgery" title="Procedures for life-threatening conditions." class="mm-link"><span class="mm-title">Emergency Surgery</span><span class="mm-desc">Procedures for life-threatening conditions.</span></a>
+                          </li>
+                        </ul>
                       </div>
-        </li>
+                      <div class="mm-group">
+                        <span class="dropdown-header">Intensive Care</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/oxygen-supplementation" title="Support for breathing difficulty." class="mm-link"><span class="mm-title">Oxygen Support</span><span class="mm-desc">Support for breathing difficulty.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/blood-transfusions" title="Type-matched transfusion services." class="mm-link"><span class="mm-title">Blood Transfusions</span><span class="mm-desc">Type-matched transfusion services.</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mm-group">
+                        <span class="dropdown-header">Diagnostics</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/house-laboratory" title="Rapid bloodwork and diagnostic testing." class="mm-link"><span class="mm-title">In-House Laboratory</span><span class="mm-desc">Rapid bloodwork and diagnostic testing.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/radiology-ultrasound" title="Advanced imaging around the clock." class="mm-link"><span class="mm-title">X-Ray &amp; Ultrasound</span><span class="mm-desc">Advanced imaging around the clock.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/endoscopy" title="Minimally invasive retrieval and diagnostics." class="mm-link"><span class="mm-title">Endoscopy</span><span class="mm-desc">Minimally invasive retrieval and diagnostics.</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mm-group">
+                        <span class="dropdown-header">Continuing care</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/specialist-referrals" title="Coordination with local specialists." class="mm-link"><span class="mm-title">Specialist Referrals</span><span class="mm-desc">Coordination with local specialists.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/euthanasia-aftercare-services" title="Compassionate support for hard decisions." class="mm-link"><span class="mm-title">Euthanasia &amp; Aftercare</span><span class="mm-desc">Compassionate support for hard decisions.</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown mm mm-visit">
+                <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                  Your Visit <span class="caret" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu mm-panel">
+                  <div class="mm-group">
+                    <span class="dropdown-header">Before you arrive</span>
+                    <ul class="list-unstyled">
+                      <li>    <a href="https://www.masondixonveter.com/what-expect-during-your-visit" title="From arrival to discharge, step by step." class="mm-link"><span class="mm-title">What to Expect</span><span class="mm-desc">From arrival to discharge, step by step.</span></a>
+                      </li>
+                      <li>    <a href="https://www.masondixonveter.com/triage-levels-patient-illness" title="Medical triage, not arrival order." class="mm-link"><span class="mm-title">Triage Policies</span><span class="mm-desc">Medical triage, not arrival order.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mm-group">
+                    <span class="dropdown-header">Paying for care</span>
+                    <ul class="list-unstyled">
+                      <li>    <a href="https://www.masondixonveter.com/financing-options" title="Payment plans and what we accept." class="mm-link"><span class="mm-title">Financing Options</span><span class="mm-desc">Payment plans and what we accept.</span></a>
+                      </li>
+                      <li>    <a href="https://www.masondixonveter.com/mason-dixon-miracle-fund" title="Help for families facing hard costs." class="mm-link"><span class="mm-title">Miracle Fund</span><span class="mm-desc">Help for families facing hard costs.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown mm mm-hospital active">
+                <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                  Our Hospital <span class="caret" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu mm-panel mm-panel-wide dropdown-menu-right">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mm-group">
+                        <span class="dropdown-header">The hospital</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/about-our-emergency-hospital" title="Who we are and how we work." class="mm-link"><span class="mm-title">About Mason Dixon</span><span class="mm-desc">Who we are and how we work.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/meet-our-team" title="The doctors and nurses on shift." class="mm-link"><span class="mm-title">Our Team</span><span class="mm-desc">The doctors and nurses on shift.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/explore-our-facility" title="A look inside the hospital." class="mm-link"><span class="mm-title">Our Facility</span><span class="mm-desc">A look inside the hospital.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/careers" title="Open roles on our team." class="mm-link"><span class="mm-title">Careers</span><span class="mm-desc">Open roles on our team.</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mm-group">
+                        <span class="dropdown-header">For pet owners</span>
+                        <ul class="list-unstyled">
+                          <li>    <a href="https://www.masondixonveter.com/reviews" title="What other families have said." class="mm-link"><span class="mm-title">Testimonials</span><span class="mm-desc">What other families have said.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/blog" title="Guides and reading for pet owners." class="mm-link"><span class="mm-title">Resources / Blog</span><span class="mm-desc">Guides and reading for pet owners.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/grief-counseling" title="Support after losing a pet." class="mm-link"><span class="mm-title">Grief Counseling</span><span class="mm-desc">Support after losing a pet.</span></a>
+                          </li>
+                          <li>    <a href="https://www.masondixonveter.com/additional-pet-care-resources" title="Local services beyond emergency care." class="mm-link"><span class="mm-title">Additional Pet Resources</span><span class="mm-desc">Local services beyond emergency care.</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown mm mm-contact">
+                <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                  Contact Us <span class="caret" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu mm-panel dropdown-menu-right">
+                  <div class="mm-group">
+                    <span class="dropdown-header">Pet owners</span>
+                    <ul class="list-unstyled">
+                      <li>    <a href="https://www.masondixonveter.com/contact-us" title="Phone, hours and how to reach us." class="mm-link"><span class="mm-title">Contact Information</span><span class="mm-desc">Phone, hours and how to reach us.</span></a>
+                      </li>
+                      <li>    <a href="https://www.google.com/maps/place/Mason+Dixon+Animal+Emergency+Hospital/@39.7568262,-76.6723362,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xefa263436c121061!8m2!3d39.7568262!4d-76.6701475" target="_blank" title="96 Sofia Drive, Shrewsbury PA." class="mm-link"><span class="mm-title">Directions</span><span class="mm-desc">96 Sofia Drive, Shrewsbury PA.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mm-group">
+                    <span class="dropdown-header">Referring veterinarians</span>
+                    <ul class="list-unstyled">
+                      <li>    <a href="https://www.masondixonveter.com/vet-referrals" title="For veterinarians sending a patient." class="mm-link"><span class="mm-title">Emergency Referral</span><span class="mm-desc">For veterinarians sending a patient.</span></a>
+                      </li>
+                      <li>    <a href="https://www.masondixonveter.com/ultrasound-referrals" title="Request a referral ultrasound." class="mm-link"><span class="mm-title">Ultrasound Referral</span><span class="mm-desc">Request a referral ultrasound.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mm-foot">
+                    <p class="mm-foot-status"><span class="status-dot" aria-hidden="true"></span>Open 24 hours, every day</p>
+                    <p class="mm-foot-addr">96 Sofia Drive, Suite 203 · Shrewsbury, PA 17361</p>
+                    <a class="mm-foot-call" href="tel:+17174326030">(717) 432-6030</a>
+                  </div>
+                </div>
+              </li>
             </ul>
-
-  </nav>
-
-  </div>
-
+          </nav>
+        </div>
         <ul class="list-unstyled util-links-drawer hidden-lg">
           <li>
             <a class="is-hiring" href="https://www.masondixonveter.com/careers">
@@ -329,7 +284,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="hero__bg" aria-hidden="true"><img src="assets/facade.webp" alt=""></div>
+  <div class="hero__bg" aria-hidden="true"><img src="assets/facade.webp" alt="" width="1600" height="742" fetchpriority="high" decoding="async"></div>
   <div class="container hero__inner">
     <div class="hero__copy" data-reveal>
       <h1>About Mason Dixon Animal Emergency&nbsp;Hospital</h1>
@@ -363,7 +318,7 @@
 <!-- ============ INDEPENDENT ============ -->
 <section class="split">
     <figure class="split__photo">
-      <img src="assets/team-shepherd.webp" alt="Mason Dixon team members outside the hospital with a German Shepherd" loading="lazy" width="1280" height="960">
+      <img src="assets/team-shepherd.webp" alt="Mason Dixon team members outside the hospital with a German Shepherd" loading="lazy" decoding="async" width="1280" height="960">
       <figcaption class="split__badge"><svg aria-hidden="true"><use href="#i-pin"/></svg> Locally owned in Shrewsbury, PA</figcaption>
     </figure>
     <div class="split__copy">
@@ -386,7 +341,7 @@
         <p>Emergency veterinary medicine is demanding, unpredictable, and incredibly rewarding. It's a career for professionals who love solving problems, thinking on their feet, and making a meaningful difference.</p>
         <p>At Mason Dixon, you'll work alongside experienced emergency veterinarians and technicians, handling everything from urgent outpatient care to complex, life-threatening medical cases.</p>
       </div>
-      <figure class="work__photo"><img src="assets/treatment-room.jpg" alt="Mason Dixon team members working in the treatment area with lab equipment and a Dalmatian patient" loading="lazy" width="1498" height="1000"></figure>
+      <figure class="work__photo"><img src="assets/treatment-room.jpg" alt="Mason Dixon team members working in the treatment area with lab equipment and a Dalmatian patient" loading="lazy" decoding="async" width="1498" height="1000"></figure>
     </div>
 
   </div>
@@ -458,7 +413,7 @@
 
 <!-- ============ X-RAY BAND ============ -->
 <section class="xray-band band-slim" aria-label="Communication with pet owners">
-  <img src="assets/exam-room.jpg" alt="A Mason Dixon team member examining a Dalmatian with its owner in an exam room" loading="lazy" width="1498" height="1000">
+  <img src="assets/exam-room.jpg" alt="A Mason Dixon team member examining a Dalmatian with its owner in an exam room" loading="lazy" decoding="async" width="1498" height="1000">
   <div class="xray-caption">
     <div class="container">
       <p>We communicate clearly with pet owners throughout treatment and coordinate with primary care veterinarians when follow-up care is needed.</p>
@@ -480,10 +435,10 @@
       <a class="btn btn-default people__btn" href="https://www.masondixonveter.com/meet-our-team">Meet Our Veterinary Team <svg class="btn-trail" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="people__mosaic" aria-hidden="true" data-reveal-stagger>
-      <img src="assets/team-1.webp" alt="" loading="lazy" width="520" height="624">
-      <img src="assets/team-2.webp" alt="" loading="lazy" width="520" height="624">
-      <img src="assets/team-3.webp" alt="" loading="lazy" width="520" height="624">
-      <img src="assets/team-4.webp" alt="" loading="lazy" width="520" height="624">
+      <img src="assets/team-1.webp" alt="" loading="lazy" decoding="async" width="520" height="624">
+      <img src="assets/team-2.webp" alt="" loading="lazy" decoding="async" width="520" height="624">
+      <img src="assets/team-3.webp" alt="" loading="lazy" decoding="async" width="520" height="624">
+      <img src="assets/team-4.webp" alt="" loading="lazy" decoding="async" width="520" height="624">
     </div>
   </div>
 </section>
@@ -571,7 +526,7 @@
 <footer class="site-footer">
   <div class="container footer-main">
     <div class="footer-brand">
-      <a href="https://www.masondixonveter.com/" aria-label="Mason Dixon Animal Emergency Hospital — home"><img src="assets/logo-white.webp" alt="Mason Dixon Animal Emergency Hospital" width="199" height="57" loading="lazy"></a>
+      <a href="https://www.masondixonveter.com/" aria-label="Mason Dixon Animal Emergency Hospital — home"><img src="assets/logo-white.webp" alt="Mason Dixon Animal Emergency Hospital" width="199" height="57" loading="lazy" decoding="async"></a>
       <address>96 Sofia Drive, Suite 203<br>Shrewsbury, PA 17361<br><a href="tel:+17174326030">(717) 432-6030</a><strong>Open 24/7, 365 days a year</strong></address>
     </div>
     <nav class="footer-col" aria-label="About">
@@ -624,6 +579,5 @@
   <a class="call-bar__dir" href="https://www.google.com/maps/search/?api=1&amp;query=96+Sofia+Drive+Suite+203+Shrewsbury+PA+17361" target="_blank" rel="noopener" aria-label="Get directions"><svg aria-hidden="true"><use href="#i-pin"/></svg></a>
 </div>
 
-<script src="script.js?v=64" defer></script>
 </body>
 </html>
