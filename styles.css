@@ -363,7 +363,7 @@ svg{flex-shrink:0}
 @media (min-width:1024px){
   .work__top{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(48px,6vw,96px);align-items:stretch}
   .work__copy{align-self:center;padding:var(--s4) 0}
-  .work__photo{margin:calc(-1 * var(--wpad)) calc(-1 * max(var(--pad),(100vw - var(--container)) / 2 + var(--pad))) 0 0;aspect-ratio:auto;min-height:100%}
+  .work__photo{margin:calc(-1 * var(--wpad)) calc(-1 * max(var(--pad),(100vw - var(--container)) / 2 + var(--pad))) calc(-1 * var(--wpad)) 0;aspect-ratio:auto;min-height:100%}
 }
 @media (max-width:767px){
   .xray-band{height:auto}
@@ -371,3 +371,16 @@ svg{flex-shrink:0}
   .xray-band::after{display:none}
   .xray-caption{position:relative;inset:auto;padding:var(--s6) 0}
 }
+
+/* ---------- What makes Mason Dixon different (navy band) ---------- */
+.work{border-bottom:0}
+.perks-band{position:relative;overflow:clip;padding:clamp(56px,6vw,104px) 0;background:var(--navy);color:var(--on-dark)}
+.perks-band .paws{opacity:.05;-webkit-mask-image:linear-gradient(90deg,transparent 55%,#000 90%);mask-image:linear-gradient(90deg,transparent 55%,#000 90%)}
+.perks-band > .container{position:relative;z-index:1}
+.perks-band .work__label{margin-top:0;color:#fff}
+.perks-band .perks{border-top-color:rgba(255,255,255,.16)}
+.perks-band .perk{border-bottom-color:rgba(255,255,255,.16)}
+.perks-band .perk h3{color:#fff}
+.perks-band .perk__icon{color:#aeb6ff}
+.perks-band .perk p{color:var(--on-dark-muted)}
+@media (max-width:1023px){.work{padding-bottom:0}.work__photo{margin-bottom:0}}
